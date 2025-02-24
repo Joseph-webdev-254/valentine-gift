@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- SVG Container -->
+    <div class="svg-div" style="display: none">
+      <!-- Facebook Icon -->
+      <svg id="icon-facebook" viewBox="0 0 24 24" fill="blue">
+        <path
+          d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.733 0 1.325-.592 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"
+        />
+      </svg>
+
+      <!-- WhatsApp Icon -->
+      <svg id="icon-whatsapp" viewBox="0 0 24 24" fill="green">
+        <path
+          d="M17.507 14.307l-.009.075c-.764.607-1.779.864-2.601.864-1.423 0-2.731-.744-3.595-1.996-1.135-1.623-1.553-3.764-1.239-5.767.312-1.999 1.365-3.666 2.95-4.517 1.585-.851 3.405-.78 4.955.2 1.55.98 2.517 2.566 2.517 4.303 0 1.737-.967 3.323-2.517 4.303-.009.006-.018.012-.027.018zm-1.441-1.43c1.257-.795 2.02-2.078 2.02-3.386 0-1.308-.763-2.591-2.02-3.386-1.257-.795-2.872-.853-4.166-.16-1.294.693-2.12 2.004-2.353 3.617-.233 1.613.153 3.262 1.073 4.511.92 1.249 2.365 1.945 3.91 1.945.622 0 1.258-.13 1.881-.39l.655-.341zm-5.066-1.978c-.391.391-1.023.391-1.414 0-.391-.391-.391-1.023 0-1.414l3-3c.391-.391 1.023-.391 1.414 0 .391.391.391 1.023 0 1.414l-3 3zm6.5-6.5c-.391.391-1.023.391-1.414 0-.391-.391-.391-1.023 0-1.414l3-3c.391-.391 1.023-.391 1.414 0 .391.391.391 1.023 0 1.414l-3 3z"
+        />
+      </svg>
+
+      <!-- LinkedIn Icon -->
+      <svg id="icon-linkedin" viewBox="0 0 24 24">
+        <path
+          d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"
+        />
+      </svg>
+
+      <!-- X (Twitter) Icon -->
+      <svg id="icon-x" viewBox="0 0 24 24" fill="black">
+        <path
+          d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+        />
+      </svg>
+
+      <!-- Hamburger Menu Icon -->
+      <svg id="hamburger" viewBox="0 0 24 24" fill="white">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+      </svg>
+      <!-- X (Close) Icon -->
+      <svg
+        id="close-icon"
+        width="40"
+        height="40"
+        viewBox="0 0 24 24"
+        fill="white"
+      >
+        <path
+          d="M18 6L6 18"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6 6L18 18"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+
+    <header class="header">
+      <a href="#" class="logo">Esther</a>
+
+      <div class="please">
+        <div id="menu-icon">
+          <svg width="40" height="40" class="menu-icon">
+            <use href="#hamburger"></use>
+          </svg>
+          <svg class="icon-home hide">
+            <use href="#close-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="#from ">From</a>
+        <span class="active-nav"></span>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, I'm <span>Esther Nyakio</span></h1>
+
+        <div class="text-animate">
+          <h3>Electrical Engineer</h3>
+        </div>
+        <p>
+          Hey there! I am a perspiring electrical engineer currently undertaking
+          my studies in Bachelor of Science in Electrical Engineering as First
+          year at Muranga University Of Science and Technology
+        </p>
+
+        <div class="btn-box">
+          <a href="#" class="btn">Hire Me </a>
+          <a href="#" class="btn">Let's Talk </a>
+        </div>
+      </div>
+      <div class="home-sci">
+        <a href="#"
+          ><svg width="40" height="40">
+            <use href="#icon-facebook"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="40" height="40">
+            <use href="#icon-x"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="40" height="40">
+            <use href="#icon-whatsapp"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="home-imgHover">
+        <img src="N13.png" />
+      </div>
+    </section>
+
+    <!---about section--->
+
+    <section id="about" class="about">
+      <h2 class="heading">About <span class="span">Me</span></h2>
+      <div class="about-img">
+        <!----place the image here-->
+        <img src="NE2.png" alt="" />
+        <div class="trial"><span class="circle-spin"></span></div>
+      </div>
+
+      <div class="about-content">
+        <h3>About <span>Me!</span></h3>
+
+        <p>
+          All I can say about myself is that I am a hardworking selfdriven
+          person who is really friendly and easy to relate to. As for my hobies
+          I really like watching movies and just chilling.I am abit of an
+          intovert, not in bad way I just love my own company and hate partying.
+        </p>
+
+        <div class="btn-box btns">
+          <a href="#" class="btn">Read More </a>
+        </div>
+      </div>
+    </section>
+
+    <!---eduaction-->
+
+    <section class="education" id="education">
+      <h2 class="heading">My<span>Journey </span></h2>
+      <div class="education-row">
+        <div class="education-column">
+          <h3 class="title">Education</h3>
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <!---Add calender SVg--->
+                  2010 -2017
+                </div>
+                <h3>Primary School</h3>
+                <p>
+                  In this duration of 8 years i undertook my primary School
+                  eduaction at lower Kihara primary School which is a public
+                  school located at Jakai in kiambaa <br />
+                  <br />
+                  <br />
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <!---Add calender SVg--->
+                  2018 -2023
+                </div>
+                <h3>Secondary School</h3>
+                <p>
+                  In the stated span of time above i partially tackled my
+                  secondary school studies in two school partly at an all girls
+                  Boarding School in Nyeri that goes by the name of South Tetu
+                  Girls and then I completed my highschool education at mixed
+                  day school in Kiambaa called Kihara Secondary School.
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <!---Add calender SVg--->
+                  2024-2029
+                </div>
+                <h3>Bachelors Degree - University</h3>
+                <p>
+                  During this duration i am currently undertaking my higher
+                  education studies in electrical engineering at Muranga
+                  University which will take 5years <br />
+                  <br />
+                  <br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-column">
+          <h3 class="title">Experience</h3>
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <!---Add calender SVg--->
+                  2017 -2018
+                </div>
+                <h3>Master Degree - University</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
+                  nobis, consequatur maxime, magnam, atque voluptatibus
+                  asperiores consectetur reprehenderit obcaecati exercitationem
+                  odit dolorem autem cum impedit quo cumque quos dolores libero
+                  possimus molestias numquam ut? Accusamus!
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <!---Add calender SVg--->
+                  2017 -2018
+                </div>
+                <h3>Master Degree - University</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
+                  nobis, consequatur maxime, magnam, atque voluptatibus
+                  asperiores consectetur reprehenderit obcaecati exercitationem
+                  odit dolorem autem cum impedit quo cumque quos dolores libero
+                  possimus molestias numquam ut? Accusamus!
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <!---Add calender SVg--->
+                  2017 -2018
+                </div>
+                <h3>Master Degree - University</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
+                  nobis, consequatur maxime, magnam, atque voluptatibus
+                  asperiores consectetur reprehenderit obcaecati exercitationem
+                  odit dolorem autem cum impedit quo cumque quos dolores libero
+                  possimus molestias numquam ut? Accusamus!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---contact section-->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" placeholder="Full Name" required />
+            <span class="Focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="email" placeholder="Email address" required />
+            <span class="Focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="number" placeholder="Mobile Number" required />
+            <span class="Focus"></span>
+          </div>
+
+          <div class="input-field">
+            <input type="text" placeholder="Email Subject" required />
+            <span class="Focus"></span>
+          </div>
+        </div>
+        <div class="textArea-field">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <span class="focus"></span>
+        </div>
+        <div class="btn-box btns">
+          <button type="submit" class="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- from section -->
+    <section class="from" id="from">
+      <div id="comments">
+        <span class="span-comments">From section: </span>
+        <div class="btn-box">
+          <a href="#" class="btn" id="bnt">Read more </a>
+        </div>
+
+        <div class="comment">
+          You have received this website as present from Joseph Gitau who wishes
+          success in all of your endevours and he wants you to know he is
+          thinking of you at all time.Never change my girl!
+          <section class="skills" id="skills">
+            <div class="skills-row">
+              <div class="skills-column">
+                <div class="skill-box">
+                  <div class="skills-content">
+                    <h2>His reasons for liking you are</h2>
+                    <div class="progress">
+                      <h3>You are smart <span>100%</span></h3>
+                      <div class="bar"><span class="html"></span></div>
+                    </div>
+
+                    <div class="progress">
+                      <h3>You are a Joker<span>50%</span></h3>
+                      <div class="bar"><span class="css-span"></span></div>
+                    </div>
+                    <div class="progress">
+                      <h3>You're Chaurisma <span>60%</span></h3>
+                      <div class="bar">
+                        <span class="JavaScript-span"></span>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <h3>Your Waist <span>40%</span></h3>
+                      <div class="bar"><span class="react-span"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <svg style="display: none">
+        <defs>
+          <symbol id="icon-up" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 4l-8 8h5v8h6v-8h5l-8-8z" />
+          </symbol>
+        </defs>
+      </svg>
+      <div class="footer-text">
+        <p>Created by Joseph-Webdev-254</p>
+      </div>
+      <!-- <div class="footer-iconTop">
+        <svg width="30" height="30">
+           <use xlink:href="#icon-up">
+        </svg>
+      </div> -->
+    </footer>
+
+    <script src="text.js"></script>
+  </body>
+</html>
